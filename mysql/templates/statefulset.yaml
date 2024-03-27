@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: "{{.Values.statefulset.image}}"
+        image: "{{ .Values.statefulset.image }}"
         args:
         - "--ignore-db-dir=lost+found"
         envFrom:
